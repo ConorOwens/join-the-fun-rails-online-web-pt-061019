@@ -1,4 +1,4 @@
 class Passenger < ActiveRecord::Base
-  belongs_to :ride
-  has_many :through
+  has_many :rides 
+  has_many :taxis, through: :rides 
 end
